@@ -4,7 +4,7 @@ Most task management tools I've seen expect you to manually sort the tasks, or a
 
 I am personally pleased with the results, but your mileage may vary. Additionally, as this tool was originally written as an experiment, I can make no guarantees regarding stability or safety of using this tool.
 
-If you do decide to use this (or create anything based on it), I'd appreciate you letting me know your thoughts and what you're using it for. I'm @krdluzni on twitter, and my DMs are open.
+If you do decide to use this (or create anything based on it), I'd appreciate you letting me know your thoughts and what you're using it for. I'm [@krdluzni](https://twitter.com/krdluzni) on twitter, and my DMs are open.
 
 # How do I launch the tool?
 
