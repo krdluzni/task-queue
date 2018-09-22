@@ -95,7 +95,7 @@ def list_mode
     end
   end
 
-  puts "e(x)it | (w)rite | (a)dd | (f)ilter | (r)eset | (s)elect | (u)uid select | rand(o)m | export(>) | delete(\\) | foundation(?) | (m)eta | switch pro(j)ects"
+  puts "e(x)it | (w)rite | (a)dd | (f)ilter | (r)eset | (s)elect | (u)uid select | rand(o)m | export(>) | delete(\\) | foundation(?) | next page(]) | previous page([) | (m)eta | switch pro(j)ects"
   command = gets.chomp.strip
   case command
   when "x"

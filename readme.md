@@ -68,7 +68,7 @@ An empty project will display information like the following:
 count: 0
 page: 1
 
-e(x)it | (w)rite | (a)dd | (f)ilter | (r)eset | (s)elect | (u)uid select | rand(o)m | export(>) | delete(\) | foundation(?) | (m)eta | switch pro(j)ects
+e(x)it | (w)rite | (a)dd | (f)ilter | (r)eset | (s)elect | (u)uid select | rand(o)m | export(>) | delete(\) | foundation(?) | next page(]) | previous page([) | (m)eta | switch pro(j)ects
 ```
 
 This is the list view that shows you all tasks in your current project.
@@ -115,6 +115,10 @@ Creates a new project containing only tasks in the currently filtered list.
 Deletes all tasks in the current list. You will be asked to confirm TWICE since it is not possibly to undo. For the first confirmation type 'yes', for the second type 'REALLY'.
 ### foundation(?)
 Foundations are preconfigured filter collections. This allows you to switch between them, or (by not selecting any) turn the foundation off. Foundations are NOT cleared when using the reset command.
+### next page(])
+Go forward one page.
+### previous page([)
+Go back one page.
 ### (m)eta
 This loads the Meta view, where you change things about the project or the display rather than about individual tasks.
 ### switch pro(j)ects
