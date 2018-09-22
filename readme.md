@@ -16,7 +16,7 @@ A list of reasons to do the task that aren't about creating value.
 A date until which the task is not to be considered.
 
 The tool then calculates a score for each task according to the following formula (roughly):
-(value * 6 + reasons.count * 6 + task.dependencies * 4)/(complexities.count * 5 + hours * 1 + cost * 0.1 + 0.0001)
+`(value * 6 + reasons.count * 6 + task.dependencies * 4)/(complexities.count * 5 + hours * 1 + cost * 0.1 + 0.0001)`
 
 And sorts them according to that information.
 
@@ -44,10 +44,12 @@ When you launch this tool, it will look for a file called default.json in your c
 
 An empty project will display information like the following:
 
-`count: 0
+```
+count: 0
 page: 1
 
-e(x)it | (w)rite | (a)dd | (f)ilter | (r)eset | (s)elect | (u)uid select | rand(o)m | export(>) | delete(\) | foundation(?) | (m)eta | switch pro(j)ects`
+e(x)it | (w)rite | (a)dd | (f)ilter | (r)eset | (s)elect | (u)uid select | rand(o)m | export(>) | delete(\) | foundation(?) | (m)eta | switch pro(j)ects
+```
 
 This is the list view that shows you all tasks in your current project.
 
