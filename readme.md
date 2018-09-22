@@ -1,6 +1,6 @@
 # What is this?
 
-Most task management tools I've seen expect you to manually sort the tasks, or assign priority values to them. This tool was created to test a different approach, where you feed the tool more data about the task, and it assigns priorities for you based on a customizable heuristic.
+Most task management tools I've seen expect you to manually sort the tasks, or assign priority values to them. This tool was created to test a different approach, where you feed the tool more data about the task, and it assigns priorities for you based on a customizable heuristic. This also allows it to dynamically resort the list when your needs change. All you need to do is change the heuristic, or add some more detail to the tasks. No need to manually reprioritize everything.
 
 I am personally pleased with the results, but your mileage may vary. Additionally, as this tool was originally written as an experiment, I can make no guarantees regarding stability or safety of using this tool.
 
