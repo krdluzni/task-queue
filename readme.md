@@ -4,6 +4,8 @@ Most task management tools I've seen expect you to manually sort the tasks, or a
 
 I am personally pleased with the results, but your mileage may vary. Additionally, as this tool was originally written as an experiment, I can make no guarantees regarding stability or safety of using this tool.
 
+If you do decide to use this (or create anything based on it), I'd appreciate you letting me know your thoughts and what you're using it for. I'm @krdluzni on twitter, and my DMs are open.
+
 # How do I launch the tool?
 
 You will need to have a ruby language interpreter installed. This tool was created and tested with `ruby 2.4.1p111 (2017-03-22 revision 58053) [x64-mingw32]`. I have currently switched to `ruby 2.5.1p57 (2018-03-29 revision 63029) [x64-mingw32]` and have seen no issues with it, yet.
