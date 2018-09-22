@@ -12,6 +12,16 @@ Without file associations: `ruby -- task-queue.rb`.
 
 If you have file associations set up for ruby scripts, you can launch it with just: `task-queue.rb`.
 
+# Sample project
+
+Within this repository, I've included a very minimal sample project. If you launch the tool from the root of this repository, you can switch to the sample project by entering these commands:
+```
+j<Enter>
+sample<Enter>
+```
+
+This project contains three tasks, a simple sorting rule, and a default foundation filter-set that hides all tasks with a status of `done`.
+
 # How does this work? (An example):
 
 In my case, I give the tool the following data for each task:
@@ -70,7 +80,25 @@ Saves the project.
 ### (a)dd
 Creates a new task.
 ### (f)ilter
-Runs a search for tasks meeting rules you define.
+Runs a search for tasks meeting rules you define. This will prompt you for more information:
+#### field?
+Which field will this filter be checking?
+#### comparison?
+What comparison will be done? Understood comparisons are:
+* missing:
+Missing allows you to find cases where a field has not been set (or in the case of arrays, where the array is empty. Has is also a bit special.
+* is, =:
+Compares for direct equality. In the case of arrays, it will also match when any element of the array matches.
+* has:
+Used on a string field it will check whether the field contains the target substring. Used on an array, it will check if any member of that array contains the substring.
+* greater than, >:
+Simple greater than comparison.
+* less than, <:
+Simple less than comparison.
+#### target?
+The value to compare against. In the case of a `missing` comparison, the target is ignored.
+#### negate?
+Enter `y` to return all tasks that do NOT match the condition, otherwise all tasks that do match the condition will be returned.
 ### (r)eset
 Removes all current filters from the view.
 ### (s)elect
