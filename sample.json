@@ -1,0 +1,101 @@
+{
+  "tasks": [
+    {
+      "id": 2,
+      "uuid": "93cc8909-890d-4fdf-b7a9-0cce47cc89c8",
+      "name": [
+        "publish this example"
+      ],
+      "value": 5,
+      "hours": 1.0,
+      "reasons": [
+        "people can't see it if it isn't published"
+      ],
+      "requires": [
+        "b72d5761-c0ee-4e9e-8795-1635cdecb411"
+      ],
+      "status": ""
+    },
+    {
+      "id": 3,
+      "uuid": "b72d5761-c0ee-4e9e-8795-1635cdecb411",
+      "name": [
+        "finish making this example"
+      ],
+      "required by": [
+        "93cc8909-890d-4fdf-b7a9-0cce47cc89c8"
+      ],
+      "tag": [
+        "sample project"
+      ],
+      "value": 3,
+      "hours": 2.0
+    },
+    {
+      "id": 1,
+      "uuid": "68d16370-0732-4db0-8526-21f0846de292",
+      "name": [
+        "a task"
+      ],
+      "tag": [
+        "sample"
+      ],
+      "value": 3,
+      "reasons": [
+        "because it's on this list"
+      ],
+      "complexity": [
+        "it's not very well defined"
+      ],
+      "hours": 2.0,
+      "status": "done"
+    }
+  ],
+  "known_fields": {
+    "id": "Integer",
+    "uuid": "UUID",
+    "name": "Array",
+    "tag": "Array",
+    "value": "Integer",
+    "reasons": "Array",
+    "complexity": "Array",
+    "hours": "Float",
+    "required by": "UUID_Array",
+    "requires": "UUID_Array",
+    "status": "String"
+  },
+  "sort_rules": {
+    "default": "0",
+    "div": "((task[\"value\"]||0) * 6 + (task[\"reason\"]||[]).count * 6)/((task[\"complexity\"]||[]).count * 5 + (task[\"hours\"]||0) * 1 + (task[\"cost\"]||0) * 0.1 + 0.0001)"
+  },
+  "foundations": {
+    "default": [
+      {
+        "field": "status",
+        "comparison": "is",
+        "target": "done",
+        "negate": true
+      }
+    ]
+  },
+  "display_fields": [
+    "name",
+    "status"
+  ],
+  "creation_fields": [
+    "name"
+  ],
+  "inverse_keys": {
+    "required by": "requires",
+    "requires": "required by"
+  },
+  "display_calculations": [
+    "hours"
+  ],
+  "calculations": {
+    "hours": "(task[\"hours\"]||0)"
+  },
+  "render_count": 10,
+  "show_count": true,
+  "sort_rule_selected": "div"
+}
