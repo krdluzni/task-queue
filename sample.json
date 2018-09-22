@@ -1,23 +1,7 @@
 {
   "tasks": [
     {
-      "id": 2,
-      "uuid": "93cc8909-890d-4fdf-b7a9-0cce47cc89c8",
-      "name": [
-        "publish this example"
-      ],
-      "value": 5,
-      "hours": 1.0,
-      "reasons": [
-        "people can't see it if it isn't published"
-      ],
-      "requires": [
-        "b72d5761-c0ee-4e9e-8795-1635cdecb411"
-      ],
-      "status": ""
-    },
-    {
-      "id": 3,
+      "id": 1,
       "uuid": "b72d5761-c0ee-4e9e-8795-1635cdecb411",
       "name": [
         "finish making this example"
@@ -29,10 +13,29 @@
         "sample project"
       ],
       "value": 3,
-      "hours": 2.0
+      "hours": 0.5,
+      "reasons": [
+        "need something for a new user to look at initially"
+      ]
     },
     {
-      "id": 1,
+      "id": 2,
+      "uuid": "93cc8909-890d-4fdf-b7a9-0cce47cc89c8",
+      "name": [
+        "publish this example"
+      ],
+      "value": 4,
+      "hours": 1.0,
+      "reasons": [
+        "people can't see it if it isn't published"
+      ],
+      "requires": [
+        "b72d5761-c0ee-4e9e-8795-1635cdecb411"
+      ],
+      "status": ""
+    },
+    {
+      "id": 3,
       "uuid": "68d16370-0732-4db0-8526-21f0846de292",
       "name": [
         "a task"
@@ -66,7 +69,7 @@
   },
   "sort_rules": {
     "default": "0",
-    "div": "((task[\"value\"]||0) * 6 + (task[\"reason\"]||[]).count * 6)/((task[\"complexity\"]||[]).count * 5 + (task[\"hours\"]||0) * 1 + (task[\"cost\"]||0) * 0.1 + 0.0001)"
+    "div": "((task[\"value\"]||0) * 6 + (task[\"reason\"]||[]).count * 6 + (task[\"required by\"]||[]).count * 3)/((task[\"complexity\"]||[]).count * 5 + (task[\"hours\"]||0) * 1 + (task[\"cost\"]||0) * 0.1 + 0.0001)"
   },
   "foundations": {
     "default": [
